@@ -13,7 +13,8 @@ class demo
 	/*
 		// 	Constant members must be initialised
 	        //      otherwise compiler generate error.
-                //      but whenever we create the the object of the class theire no memmory allocation 
+                //      but whenever we create the the object of the class theire no memmory allocation   i.e -> const int i=10    //Error 
+		
 		demo()
 		{
 		
@@ -23,6 +24,7 @@ class demo
 	/*
 		// 	We can not initialise constant members 
 		// 		inside the constuctor
+		
 		demo()
 		{
 			i = 10;	//Error
@@ -37,6 +39,14 @@ class demo
 		{
 			cout<<"Successfully initialised the constant members..."<<endl;
 		}
+	
+	        
+	        //    We can initialize the Dynamically constant data members 
+	        
+	        Demo  (int a):i(a)
+                {
+                        cout<<"Successfully initialised  the Dynamic constant members"<<endl;
+                }
 };
 
 int main()
@@ -45,7 +55,8 @@ int main()
 
 	// We can not change value of constant member...
 	// dobj.i++;		// NOT ALLOWED...
-
+        
+	demo obj(21);    //   Dynamically created 
 	return 0;
 }
 
