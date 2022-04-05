@@ -47,7 +47,7 @@ int main()
                 : Base class pointer point to Base class object.              //VALID
                 : Derived class pointer point to Derived class object.        //VALID
                 : Base class pointer point to Derived class object.           //VALID
-                : Derived class pointer point to Base class object.           //VALID
+                : Derived class pointer point to Base class object.           //NOT VALID
 
 */
 
