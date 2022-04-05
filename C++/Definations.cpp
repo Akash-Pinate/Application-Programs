@@ -40,7 +40,7 @@ class Demo
             i=a;
             cout<<"parameterised fun: "<<endl;
         }
-}
+};
 
 class Hello: public Demo
 {
@@ -52,7 +52,7 @@ class Hello: public Demo
         {
             cout<<"inside hello"<<endl;
         }
-}
+};
 
 int main()
 {
